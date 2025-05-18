@@ -57,6 +57,8 @@ public class Menu extends JFrame {
 
         // Acciones
         btnVehiculos.addActionListener(e -> new ViewVehiculos().setVisible(true));
+        btnMecanicos.addActionListener(e -> new ViewMecanicos().setVisible(true));
+        btnClientes.addActionListener(e -> new ViewClientes().setVisible(true));
         // Puedes agregar los otros formularios aquí cuando estén listos, por ejemplo:
         // btnMecanicos.addActionListener(e -> new MecanicosForm().setVisible(true));
 

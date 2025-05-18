@@ -1,29 +1,34 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package com.mycompany.tallermecanicoex.Views;
 
+/**
+ *
+ * @author Carlos Orozco
+ */
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
-import com.mycompany.tallermecanicoex.Views.Menu;
 
-public class ViewVehiculos extends JFrame {
+public class ViewClientes extends JFrame {
     private JButton btnVolver;
-    private JTable tablaVehiculos;
+    private JTable tablaClientes;
     private DefaultTableModel modelo;
 
-    public ViewVehiculos() {
-        setTitle("Vehículos - Taller El Veloz");
+    public ViewClientes() {
+        setTitle("Clientes - Taller El Veloz");
         setSize(800, 400);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
 
-        // Tabla
-        modelo = new DefaultTableModel(new String[]{"ID", "Placa", "Marca", "Modelo", "Año"}, 0);
-        tablaVehiculos = new JTable(modelo);
-        JScrollPane scrollPane = new JScrollPane(tablaVehiculos);
+        modelo = new DefaultTableModel(new String[]{"ID", "Nombre", "Apellido", "Teléfono", "Email"}, 0);
+        tablaClientes = new JTable(modelo);
+        JScrollPane scrollPane = new JScrollPane(tablaClientes);
         add(scrollPane, BorderLayout.CENTER);
 
-        // Botón menú
         JPanel panelBotones = new JPanel(new FlowLayout(FlowLayout.CENTER, 15, 10));
         btnVolver = new JButton("Menú");
         btnVolver.setPreferredSize(new Dimension(120, 30));
@@ -37,6 +42,9 @@ public class ViewVehiculos extends JFrame {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new ViewVehiculos().setVisible(true));
+        SwingUtilities.invokeLater(() -> new ViewClientes().setVisible(true));
     }
 }
+
+
+

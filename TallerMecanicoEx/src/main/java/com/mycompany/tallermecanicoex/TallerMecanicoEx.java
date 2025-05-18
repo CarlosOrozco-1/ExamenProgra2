@@ -4,6 +4,8 @@
 
 package com.mycompany.tallermecanicoex;
 
+import com.mycompany.tallermecanicoex.Views.Menu;
+
 /**
  *
  * @author Carlos Orozco
@@ -11,6 +13,10 @@ package com.mycompany.tallermecanicoex;
 public class TallerMecanicoEx {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        //instancia para cargar el menu
+        Menu menu = new Menu();
+        menu.setLocationRelativeTo(null);
+        menu.setVisible(true);
     }
 }

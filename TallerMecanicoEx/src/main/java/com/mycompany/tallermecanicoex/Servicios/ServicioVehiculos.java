@@ -22,11 +22,11 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
 import com.mycompany.tallermecanicoex.Modelos.ModeloVehiculos;
-import com.mycompany.tallermecanicoex.Modelos.ModeloVehiculos.Vehiculo;
+import com.mycompany.tallermecanicoex.Modelos.ModeloVehiculos;
 
 public class ServicioVehiculos {
 
-    private static final String VEHICULO = "http://localhost:5167/api/Vehiculos";
+    private static final String VEHICULO = "http://localhost:5251/api/Vehiculo";
     private final Gson gson = new Gson();
 
     public List<ModeloVehiculos> obtenerVehiculos() throws Exception {

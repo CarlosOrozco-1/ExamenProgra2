@@ -20,7 +20,7 @@ public class ViewClientes extends JFrame {
     public ViewClientes() {
         setTitle("Clientes - Taller El Veloz");
         setSize(800, 400);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
 
